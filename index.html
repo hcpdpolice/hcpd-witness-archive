@@ -10,11 +10,16 @@
 <body>
   <main class="archive-shell">
     <section class="case-file" aria-labelledby="archive-title">
+      <div class="binder-holes" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       <div class="file-rule"></div>
 
       <header class="file-header">
         <div>
-          <p class="department-label">HCPD CASE RECORD</p>
+          <p class="department-label">HCPD CASE RECORD / PUBLIC WITNESS INTAKE</p>
           <h1 id="archive-title">
             HURRICANE POLICE DEPARTMENT
             <span>WITNESS STATEMENT ARCHIVE</span>
@@ -27,6 +32,12 @@
         <div class="stamp" aria-label="Open case stamp">OPEN CASE</div>
       </header>
 
+      <div class="case-meta" aria-label="Archive case details">
+        <p><span>Case No.</span> HCPD-OO-83/96</p>
+        <p><span>Division</span> Missing Persons / Unusual Incidents</p>
+        <p><span>Clerk</span> Night Desk</p>
+      </div>
+
       <section class="disclaimer" aria-label="Fan project disclaimer">
         <p>
           This is an in-universe fan submission page for OUT OF ORDER, a non-commercial Five Nights at Freddy’s fan game project.
@@ -38,6 +49,10 @@
           This page is not affiliated with Scott Cawthon, Steel Wool Studios, Blumhouse, or any official FNaF media.
         </p>
       </section>
+
+      <div class="warning-strip" aria-label="Privacy warning">
+        FICTIONAL ARCHIVE ONLY / DO NOT SEND REAL NAMES, ADDRESSES, PHONE NUMBERS, OR PRIVATE DETAILS
+      </div>
 
       <p class="intro-text">
         Submit a fictional witness statement connected to strange events reported in Hurricane between 1983 and 1996.
@@ -53,11 +68,14 @@
       </aside>
 
       <!-- Edit this Formspree endpoint after creating your form at https://formspree.io. -->
-      <form id="witness-form" class="witness-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <form id="witness-form" class="witness-form" action="https://formspree.io/f/xqennwrn" method="POST">
+        <input type="hidden" name="_subject" value="New HCPD Witness Archive statement">
+        <input type="hidden" name="project" value="OUT OF ORDER fan submission">
+
         <div class="form-grid">
           <label>
             <span>Witness Name <strong>required</strong></span>
-            <input type="text" name="witness_name" placeholder="Use a fictional name" required>
+            <input type="text" name="witness_name" placeholder="Use a fictional name" autocomplete="off" required>
           </label>
 
           <label>
@@ -146,10 +164,12 @@
 
       <footer class="file-footer">
         <div class="file-rule"></div>
-        <p>ARCHIVE STATUS: ACTIVE</p>
-        <p>CASE CONDITION: UNRESOLVED</p>
-        <p>LAST KNOWN LOCATION: Hurricane City</p>
-        <p>— H.P.D.</p>
+        <div class="footer-grid">
+          <p>ARCHIVE STATUS: ACTIVE</p>
+          <p>CASE CONDITION: UNRESOLVED</p>
+          <p>LAST KNOWN LOCATION: Hurricane City</p>
+          <p>— H.P.D.</p>
+        </div>
       </footer>
     </section>
   </main>

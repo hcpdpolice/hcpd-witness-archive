@@ -13,7 +13,7 @@
     var endpoint = form.getAttribute("action");
     var formData = new FormData(form);
 
-    // Replace YOUR_FORM_ID in index.html with your real Formspree form ID.
+    // To change the Formspree destination, edit the form action in index.html.
     status.textContent = "Submitting statement...";
     status.className = "form-status";
 

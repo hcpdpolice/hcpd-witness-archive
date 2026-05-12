@@ -12,12 +12,32 @@ This project does not use cookies, login, analytics, tracking, frameworks, build
 4. Find this form action:
 
 ```html
-action="https://formspree.io/f/YOUR_FORM_ID"
+action="https://formspree.io/f/xqennwrn"
 ```
 
-5. Replace `YOUR_FORM_ID` with your real Formspree form ID.
+5. Replace that URL with your own Formspree endpoint if you want to use a different form.
 
 The JavaScript in `script.js` intercepts the form submission, sends it with `fetch`, and shows success or error messages without reloading the page.
+
+## Access Locally
+
+You can open the page directly in a browser:
+
+1. Open the project folder.
+2. Double-click `index.html`.
+3. The page should load from a local `file:///` URL.
+
+If your browser blocks local JavaScript behavior, use a tiny local static server:
+
+```bash
+python -m http.server 8000
+```
+
+Then open:
+
+```text
+http://localhost:8000
+```
 
 ## Publish on GitHub Pages
 
