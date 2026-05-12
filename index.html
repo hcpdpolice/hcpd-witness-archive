@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HCPD Witness Statement Archive, an in-universe fan submission page for OUT OF ORDER.">
+  <title>HCPD Witness Archive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro-sequence" class="intro-sequence" role="status" aria-live="polite">
+    <div class="intro-panel">
+      <p class="intro-kicker">HURRICANE POLICE DEPARTMENT</p>
+      <div class="intro-lines" aria-label="Archive loading sequence">
+        <span>CONNECTING TO HCPD ARCHIVE...</span>
+        <span>RETRIEVING CASE HCPD-OO-83/96...</span>
+        <span>ACCESS LEVEL: FICTIONAL PUBLIC INTAKE...</span>
+        <span>STATUS: OPEN CASE</span>
+      </div>
+      <div class="intro-progress" aria-hidden="true"><span></span></div>
+      <button type="button" id="intro-skip" class="intro-skip">SKIP INTAKE SEQUENCE</button>
+    </div>
+  </div>
+
+  <main class="archive-shell">
+    <section class="case-file" aria-labelledby="archive-title">
+      <div class="binder-holes" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="file-rule"></div>
+
+      <header class="file-header">
+        <div>
+          <p class="department-label">HCPD CASE RECORD / PUBLIC WITNESS INTAKE</p>
+          <h1 id="archive-title">
+            HURRICANE POLICE DEPARTMENT
+            <span>WITNESS STATEMENT ARCHIVE</span>
+          </h1>
+          <p class="case-years">
+            Fredbear’s Family Diner / Freddy Fazbear’s Pizza<br>
+            1983 — 1996
+          </p>
+        </div>
+        <div class="stamp" aria-label="Open case stamp">OPEN CASE</div>
+      </header>
+
+      <div class="case-meta" aria-label="Archive case details">
+        <p><span>Case No.</span> HCPD-OO-83/96</p>
+        <p><span>Division</span> Missing Persons / Unusual Incidents</p>
+        <p><span>Clerk</span> Night Desk</p>
+      </div>
+
+      <section class="disclaimer" aria-label="Fan project disclaimer">
+        <p>
+          This is an in-universe fan submission page for OUT OF ORDER, a non-commercial Five Nights at Freddy’s fan game project.
+        </p>
+        <p>
+          Please use fictional names only. Do not submit real personal information.
+        </p>
+        <p>
+          This page is not affiliated with Scott Cawthon, Steel Wool Studios, Blumhouse, or any official FNaF media.
+        </p>
+      </section>
+
+      <div class="warning-strip" aria-label="Privacy warning">
+        FICTIONAL ARCHIVE ONLY / DO NOT SEND REAL NAMES, ADDRESSES, PHONE NUMBERS, OR PRIVATE DETAILS
+      </div>
+
+      <p class="intro-text">
+        Submit a fictional witness statement connected to strange events reported in Hurricane between 1983 and 1996.
+        Statements may reference old restaurants, missing person reports, employee rumors, unusual mascot sightings,
+        cassette tapes, photographs, or details that never made it into the official report.
+      </p>
+
+      <aside class="handler-note" aria-label="Case handler note">
+        <h2>Case Handler Note</h2>
+        <p>
+          Small details matter. Dates, sounds, uniforms, locked doors, and missing records may help reopen the file.
+        </p>
+      </aside>
+
+      <!-- Edit this Formspree endpoint after creating your form at https://formspree.io. -->
+      <form id="witness-form" class="witness-form" action="https://formspree.io/f/xqennwrn" method="POST">
+        <input type="hidden" name="_subject" value="New HCPD Witness Archive statement">
+        <input type="hidden" name="project" value="OUT OF ORDER fan submission">
+
+        <div class="form-grid">
+          <label>
+            <span>Witness Name <strong>required</strong></span>
+            <input type="text" name="witness_name" placeholder="Use a fictional name" autocomplete="off" required>
+          </label>
+
+          <label>
+            <span>Year of Incident <strong>required</strong></span>
+            <select name="year" required>
+              <option value="" selected disabled>Select a year</option>
+              <option value="1983">1983</option>
+              <option value="1985">1985</option>
+              <option value="1987">1987</option>
+              <option value="1993">1993</option>
+              <option value="1996">1996</option>
+              <option value="Other / Unsure">Other / Unsure</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Connection to the Case <strong>required</strong></span>
+            <select name="connection" required>
+              <option value="" selected disabled>Select a connection</option>
+              <option value="Former employee">Former employee</option>
+              <option value="Parent">Parent</option>
+              <option value="Child witness">Child witness</option>
+              <option value="Neighbor">Neighbor</option>
+              <option value="Technician">Technician</option>
+              <option value="Police officer">Police officer</option>
+              <option value="Customer">Customer</option>
+              <option value="Other">Other</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Location <strong>required</strong></span>
+            <select name="location" required>
+              <option value="" selected disabled>Select a location</option>
+              <option value="Fredbear’s Family Diner">Fredbear’s Family Diner</option>
+              <option value="Freddy Fazbear’s Pizza">Freddy Fazbear’s Pizza</option>
+              <option value="Fazbear’s Pizza Place">Fazbear’s Pizza Place</option>
+              <option value="Hurricane streets">Hurricane streets</option>
+              <option value="HCPD">HCPD</option>
+              <option value="Other / Unsure">Other / Unsure</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Did you see a yellow rabbit? <strong>required</strong></span>
+            <select name="yellow_rabbit" required>
+              <option value="" selected disabled>Select an answer</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+              <option value="Unsure">Unsure</option>
+            </select>
+          </label>
+        </div>
+
+        <fieldset class="evidence-field">
+          <legend>Evidence Mentioned <em>optional</em></legend>
+          <div class="checkbox-grid">
+            <label><input type="checkbox" name="evidence" value="Cassette tape"> Cassette tape</label>
+            <label><input type="checkbox" name="evidence" value="Photograph"> Photograph</label>
+            <label><input type="checkbox" name="evidence" value="Employee badge"> Employee badge</label>
+            <label><input type="checkbox" name="evidence" value="Drawing"> Drawing</label>
+            <label><input type="checkbox" name="evidence" value="Newspaper clipping"> Newspaper clipping</label>
+            <label><input type="checkbox" name="evidence" value="Strange audio"> Strange audio</label>
+            <label><input type="checkbox" name="evidence" value="Missing person report"> Missing person report</label>
+            <label><input type="checkbox" name="evidence" value="None"> None</label>
+          </div>
+        </fieldset>
+
+        <label class="statement-field">
+          <span>Statement <strong>required</strong></span>
+          <textarea name="statement" rows="8" placeholder="Write the fictional witness statement here..." required></textarea>
+        </label>
+
+        <label class="permission-field">
+          <input type="checkbox" name="permission" value="yes">
+          <span>
+            This anonymous fictional statement may be used as inspiration for future OUT OF ORDER community posts or in-game-style material.
+          </span>
+        </label>
+
+        <div class="submit-row">
+          <button type="submit">SUBMIT STATEMENT</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+
+      <footer class="file-footer">
+        <div class="file-rule"></div>
+        <div class="footer-grid">
+          <p>ARCHIVE STATUS: ACTIVE</p>
+          <p>CASE CONDITION: UNRESOLVED</p>
+          <p>LAST KNOWN LOCATION: Hurricane City</p>
+          <p>— H.P.D.</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
