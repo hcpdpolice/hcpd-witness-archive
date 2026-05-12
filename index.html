@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div id="intro-sequence" class="intro-sequence" role="status" aria-live="polite">
+    <div class="intro-panel">
+      <p class="intro-kicker">HURRICANE POLICE DEPARTMENT</p>
+      <div class="intro-lines" aria-label="Archive loading sequence">
+        <span>CONNECTING TO HCPD ARCHIVE...</span>
+        <span>RETRIEVING CASE HCPD-OO-83/96...</span>
+        <span>ACCESS LEVEL: FICTIONAL PUBLIC INTAKE...</span>
+        <span>STATUS: OPEN CASE</span>
+      </div>
+      <div class="intro-progress" aria-hidden="true"><span></span></div>
+      <button type="button" id="intro-skip" class="intro-skip">SKIP INTAKE SEQUENCE</button>
+    </div>
+  </div>
+
   <main class="archive-shell">
     <section class="case-file" aria-labelledby="archive-title">
       <div class="binder-holes" aria-hidden="true">
